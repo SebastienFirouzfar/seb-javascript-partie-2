@@ -12,7 +12,9 @@
 (function() {
 
     document.getElementById("run").addEventListener("click", function() {
-
+        let nombre = Math.floor(Math.random()*22); 
+        let racineCaree = nombre * nombre;  
+        alert("La racine carée de "+nombre+ " est " +racineCaree); 
         // your code here
 
     });

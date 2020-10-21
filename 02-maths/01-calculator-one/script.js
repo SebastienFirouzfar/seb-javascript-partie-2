@@ -15,21 +15,21 @@
     let number2  = document.getElementById("op-two").value;
 
     document.getElementById("addition").addEventListener("click", function() { 
-        window.prompt(number1 + number2); 
+        alert(number1 + number2); 
     });
 
     document.getElementById("substraction").addEventListener("click", function() {
         // perform an substraction 
-        window.prompt(number1 - number2);   
+        alert(number1 - number2);   
     });
 
     document.getElementById("multiplication").addEventListener("click", function() {
         // perform an multiplication
-        window.prompt(number1 * number2);    
+        alert(number1 * number2);    
     });
 
     document.getElementById("division").addEventListener("click", function() {
         // perform an division  
-        window.prompt(number1 / number2); 
+        alert(number1 / number2); 
     });
 })();
