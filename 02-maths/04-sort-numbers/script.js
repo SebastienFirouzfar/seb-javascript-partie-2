@@ -9,22 +9,18 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
     // to get the value of an input: document.getElementById("element-id").value
 
-    document.getElementById("run").addEventListener("click", function() {
-        let temp = 0;    
-        let numberSort = document.getElementById("numbers").value; 
-        let tableau = [2, 4, 14, 10, 90, 23, 16]; 
-            for(let i = 0; i<tableau.length; i++){
-                if(tableau[i]< tableau[i+1]){
-                    temp = tableau[i+1]; 
-                    tableau[i+1] = tableau[i]; 
-                    tableau[i] = temp; 
-                }
-            }
+    document.getElementById("run").addEventListener("click", function () {
+        let num = document.getElementById("numbers").value;
+        let numArray = num.split(', '); // split string on comma space
+        let x = numArray.map((i) => Number(i)); // array into integer
+        alert(x.sort((a, b) => a - b)); // ascending order
+        
         // your code here
     });
-
 })();
+
+

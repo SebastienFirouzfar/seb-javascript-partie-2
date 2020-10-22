@@ -14,7 +14,10 @@
     // to get the value of an input: document.getElementById("element-id").value
 
     document.getElementById("run").addEventListener("click", function() {
-
+        let numberFactoriel = document.getElementById("number").value;
+        let factorielle = 1; 
+           alert
+        
         // your code here
 
     });
