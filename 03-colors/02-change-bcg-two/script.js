@@ -10,13 +10,10 @@
 // You will have time to focus on it later.
 
 (function () {
-    let colorChoose = document.getElementById("color");
-    if (colorChoose == "red") {
-        document.getElementById("red").addEventListener("click", function () {
-            document.body.setAttribute("style", "background-color : red");
-        })
 
-    }
+    document.getElementById("run").addEventListener("click", function () {
+        let colorChoose = document.getElementById("color").value;
+        document.body.style.background = colorChoose;
+    })
     // your code here
-
 })();

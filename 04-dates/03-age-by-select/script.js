@@ -9,8 +9,14 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
-
-    // your code here
+(function () {
+    var selectDay = document.getElementById("dob-day").value;
+    var selectMonth = document.getElementById("dob-month").value;
+    var selectYear = document.getElementById("dob-year").value;
+    var calculYear = 2020 - selectYear;
+    document.getElementById("run").addEventListener("click", function () {
+        alert("Jours "+selectDay + "  " + " Moins "+selectMonth + "  " + " age  "+calculYear)
+        // your code here
+    })
 
 })();

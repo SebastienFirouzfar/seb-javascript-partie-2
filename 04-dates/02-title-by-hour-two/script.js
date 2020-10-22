@@ -11,6 +11,17 @@
 
 (function() {
 
+    let x = []
+    var heure = new Date().getHours(); 
+    var minute = new Date().getMinutes(); 
+
+    if (heure === 17 && minute === 30) {
+        x = "hello"
+    } else {
+        x = "Good evening"
+    }
+    document.getElementById("target").innerHTML = (x)
+
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
 
     // your code here
