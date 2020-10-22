@@ -15,11 +15,14 @@
 
     document.getElementById("run").addEventListener("click", function() {
         let numberFactoriel = document.getElementById("number").value;
-        let factorielle = 1; 
-           alert
-        
+        var i = 1; 
+        var factorielle = 1; 
+        while(i<=numberFactoriel){
+            factorielle = factorielle * i; 
+            i++; 
+        }
+        alert("Le factorielle de "+ numberFactoriel+ " est "+factorielle); 
         // your code here
-
     });
 
 })();

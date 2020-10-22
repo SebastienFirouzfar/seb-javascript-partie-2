@@ -9,8 +9,14 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
+    let colorChoose = document.getElementById("color");
+    if (colorChoose == "red") {
+        document.getElementById("red").addEventListener("click", function () {
+            document.body.setAttribute("style", "background-color : red");
+        })
 
+    }
     // your code here
 
 })();

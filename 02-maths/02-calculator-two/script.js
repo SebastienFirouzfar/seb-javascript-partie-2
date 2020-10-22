@@ -12,8 +12,8 @@
 (() => {
     // to get the value of an input: document.getElementById("element-id").value
     const performOperation = operation => {
-        let number1 = document.getElementById("op-one").value;
-        let number2 = document.getElementById("op-two").value;
+        let number1 = new Number (document.getElementById("op-one").value);
+        let number2 = new Number (document.getElementById("op-two").value);
         // perform the operation
         switch (operation) {
             case "addition":
