@@ -27,5 +27,11 @@
     ];
 
     // your code here
+    let indice = 0; 
+    document.getElementById("run").addEventListener("click", function(){
+        for(indice; indice < fruits.length; indice++){
+            alert(fruits[indice])
+        }
+    })
 
 })();
