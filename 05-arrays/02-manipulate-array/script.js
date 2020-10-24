@@ -24,6 +24,15 @@
         "cerise",
     ];
 
+    document.getElementById("run").addEventListener("click", function(){
+        fruits.shift()// pomme est effacer
+        fruits.pop() //cerise est effacer
+        alert(fruits)
+        fruits.push("kiwi")
+        alert(fruits)
+        fruits.splice(0, 0, 'Banane');
+        alert(fruits)
+    })
     // your code here
 
 })();
