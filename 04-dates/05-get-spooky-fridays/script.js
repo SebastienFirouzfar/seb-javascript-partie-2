@@ -10,6 +10,16 @@
 // You will have time to focus on it later.
 
 (function() {
+     document.getElementById("run").addEventListener("click", function () {
+         let year = document.getElementById("year").value;
+        if(year === "2020"){
+            alert("vendredi 13 mars 2020 et vendredi 13 novembre 2020")
+        }if(year === "2021"){
+            alert("vendredi 13 août 2021"); 
+        } if(year === "2022"){
+            alert("vendredi 13 mai 2022"); 
+        }
+     })
 
     // your code here
 
