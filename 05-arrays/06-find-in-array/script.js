@@ -89,6 +89,14 @@
         },
     ];
 
+   
     // your code here
+    document.getElementById("run").addEventListener("click", function(){
+        for(let indice = 0; indice < people.length; indice++){
+            if(people.indexOf("Jean") && people.indexOf("Dupont")){
+                alert("Voici l'indice de la personne "+ indice + " "+ people[firstname]+ " "+ people[name]); 
+            }
+        }
+    })
 
 })();
