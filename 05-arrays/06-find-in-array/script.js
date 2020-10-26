@@ -9,7 +9,7 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
     const people = [
         {
@@ -89,14 +89,15 @@
         },
     ];
 
-   
+
     // your code here
-    document.getElementById("run").addEventListener("click", function(){
-        for(let indice = 0; indice < people.length; indice++){
-            if(people.indexOf("Jean") && people.indexOf("Dupont")){
-                alert("Voici l'indice de la personne "+ indice + " "+ people[firstname]+ " "+ people[name]); 
-            }
-        }
+    document.getElementById("run").addEventListener("click", function () {
+     people.forEach(element => {
+         if(element.firstname === "Jean" && element.lastname === "Dupont"){
+             alert(people.indexOf(element)); 
+             alert(element.email)
+         }
+     })
     })
 
 })();
