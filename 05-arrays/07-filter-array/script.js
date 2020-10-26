@@ -90,5 +90,12 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", function(){
+        people.forEach(function(peoples){
+            if(peoples.age > 18){
+                alert(peoples.firstname+ " "+peoples.age); 
+            }
+        })
+    })
 
 })();
