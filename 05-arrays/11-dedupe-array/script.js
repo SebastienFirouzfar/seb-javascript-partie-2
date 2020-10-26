@@ -29,5 +29,10 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", function(){
+        //La nature de Set est telle qu’il vous permet de stocker obligatoirement et uniquement des valeurs uniques,
+        // singulières. Lorsque vous lui passez un tableau, Set supprimera toutes les valeurs en double.
+        alert([...new Set(fruits)]); 
+    })
 
 })();
