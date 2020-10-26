@@ -27,5 +27,14 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", function(){
+        fruits.forEach(function(findApple){
+            if(findApple === "apple"){
+                alert("Oui il y a un "+findApple);
+            }else{
+                alert("non il n y a pas "); 
+            }
+        })
+    })
 
 })();
