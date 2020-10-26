@@ -90,5 +90,11 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", function(){
+        calculAge = people.reduce(function(a, b){
+            return a + b.age; 
+        }, 0)
+        alert(calculAge)
+    })
 
 })();
