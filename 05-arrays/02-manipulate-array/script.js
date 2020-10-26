@@ -30,7 +30,7 @@
         alert(fruits)
         fruits.push("kiwi")
         alert(fruits)
-        fruits.splice(0, 0, 'Banane');
+        fruits.splice(0, 0, 'Banane'); 
         alert(fruits)
     })
     // your code here
