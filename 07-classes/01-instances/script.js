@@ -17,4 +17,14 @@
         }
     }
     // your code here
+    document.getElementById("run").addEventListener("click", function(){
+        let chat1 = new Cat(); 
+        let chat2 = new Cat();
+        chat1.name = "Skitty"
+        chat1.age = 9 
+        chat2.name = "Pixel"
+        chat2.age = 6
+        console.log(chat1.name+ " "+chat1.age+ " ans")
+        console.log(chat2.name+ " "+ chat2.age+ " ans")
+    })
 })();
