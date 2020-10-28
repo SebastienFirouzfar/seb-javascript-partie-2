@@ -28,7 +28,6 @@
     };
     // your code here
     document.getElementById("run").addEventListener("click", function(){
-
         computers.forEach(function(elt){
                 if(elt.available === false){
 
