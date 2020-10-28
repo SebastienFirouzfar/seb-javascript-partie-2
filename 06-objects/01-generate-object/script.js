@@ -19,6 +19,6 @@
             country : "Belgique", 
             city : "Bruxelles"
         }; 
-        console.log(infomation.firstName+ " "+ infomation.lastName+ " "+infomation.age+ " "+infomation.country+ " "+ infomation.city)
+        alert(infomation.firstName+ " "+ infomation.lastName+ " "+infomation.age+ " "+infomation.country+ " "+ infomation.city)
     })
 })();
