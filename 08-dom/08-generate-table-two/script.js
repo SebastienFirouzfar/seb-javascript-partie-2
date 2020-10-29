@@ -14,9 +14,9 @@
     // your code here
     let target = document.getElementById("target"); 
      let tab = document.createElement("table")
-    for (let i = 0; i <= 10; i++) {
+    for (let i = 1; i <= 10; i++) {
         let row = document.createElement("tr"); 
-        for (let j = 0; j <=10; j++) {
+        for (let j = 1; j <=10; j++) {
             let column = document.createElement("td");
             let text = document.createTextNode(i*j)
             column.append(text); 
