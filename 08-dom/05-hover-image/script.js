@@ -12,5 +12,13 @@
 (function() {
 
     // your code here
+    let image = document.querySelector("img");
+    let source = image.getAttribute("src");
+    image.addEventListener("mouseover",function(){
+        image.setAttribute("src", image.getAttribute("data-hover"));
+    })
+    image.addEventListener("mouseout",function(){
+        image.setAttribute("src",source);
+    })
 
 })();
