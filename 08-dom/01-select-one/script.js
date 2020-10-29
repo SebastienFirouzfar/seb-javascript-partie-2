@@ -12,5 +12,7 @@
 (function() {
 
     // your code here
+       let texte =  document.getElementById("target");
+       texte.innerHTML = "owned" 
 
 })();
