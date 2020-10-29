@@ -12,5 +12,18 @@
 (function() {
 
     // your code here
+    let target = document.getElementById("target"); 
+     let tab = document.createElement("table")
+    for (let i = 0; i <= 10; i++) {
+        let row = document.createElement("tr"); 
+        for (let j = 0; j <=10; j++) {
+            let column = document.createElement("td");
+            let text = document.createTextNode(i*j)
+            column.append(text); 
+            row.append(column) 
+        }
+        tab.append(row)
+    }
+    target.append(tab); 
 
 })();
