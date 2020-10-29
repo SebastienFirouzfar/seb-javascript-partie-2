@@ -12,5 +12,8 @@
 (function() {
 
     // your code here
-
+    let image = document.createElement("img")
+    image.setAttribute("src", document.querySelector("#source").getAttribute("data-image")); 
+    document.querySelector("#target").insertBefore(image, null); 
+    document.querySelector("#source").remove()
 })();
