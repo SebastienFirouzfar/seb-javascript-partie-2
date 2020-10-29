@@ -12,5 +12,15 @@
 (function() {
 
     // your code here
+    document.getElementById("run").addEventListener("click",function(){
+        let password1 = document.getElementById("pass-one").value;
+        let password2 = document.getElementById("pass-two").value; 
+        if(password1 === password2){
+            alert("C'est le meme password"); 
+        }else{
+            document.getElementById("pass-one").setAttribute("style", "border :1px solid red");
+            document.getElementById("pass-two").setAttribute("style", "border :1px solid red"); 
+        }
+    })
 
 })();
