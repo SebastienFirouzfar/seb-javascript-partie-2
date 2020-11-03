@@ -9,8 +9,17 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
     // your code here
+    document.getElementById("run").addEventListener("click", function () {
+        let password1 = document.getElementById("pass-one").value;
+        let password2 = document.getElementById("pass-two").value;
+        if (password1 === password2) {
+            alert("C'est le meme password");
+        } else {
+            document.querySelector("input").setAttribute("class", "error");
+        }
+    })
 
 })();
